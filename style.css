@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+ 
 html,body {
     height: 100%;
     width: 100%;
@@ -54,7 +54,7 @@ html,body {
     background-color: #fff;
     color: rgb(15, 96, 176);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -66,6 +66,18 @@ html,body {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomPanel h1{
+    font-size: 44px;
+    color: red;
+}
+
+#bottomPanel h2{
+    font-size: 40px;
+    color: rgb(10, 66, 122);
 }
 
 #bottomPanel .bubble{
@@ -82,5 +94,5 @@ html,body {
 }
 
 #bottomPanel .bubble:hover{
-    background-color: rgb(15, 96, 176);
+    background-color: rgb(10, 66, 122);
 }
