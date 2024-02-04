@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(153, 192, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#topPanel{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(17, 114, 211);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25%;
+}
+
+.elem{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.elem h2{
+    color: #fff;
+    font-weight: 500;
+}
+
+.elem .box{
+    padding: 6px 14px;
+    background-color: #fff;
+    color: rgb(15, 96, 176);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#bottomPanel{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: rgb(231, 244, 255);
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#bottomPanel .bubble{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(17, 114, 211);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomPanel .bubble:hover{
+    background-color: rgb(15, 96, 176);
+}
