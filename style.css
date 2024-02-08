@@ -13,18 +13,20 @@ html,body {
 #main{
     width: 100%;
     height: 100%;
-    background-color: rgb(153, 192, 230);
+    background-color: rgb(215, 235, 255);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #panel{
     width: 80%;
-    height: 80%;
+    height: 85%;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0.1px 0.1px 5px rgb(10, 66, 122);
 }
 
 #topPanel{
@@ -39,7 +41,7 @@ html,body {
 
 .elem{
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     align-items: baseline;
     justify-content: center;
 }
@@ -50,43 +52,43 @@ html,body {
 }
 
 .elem .box{
-    padding: 6px 14px;
+    padding: 0.5vw 1.5vw;
     background-color: #fff;
     color: rgb(15, 96, 176);
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
 #bottomPanel{
     width: 100%;
     height: calc(100% - 100px);
-    background-color: rgb(231, 244, 255);
-    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5vw 1.2vw; 
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 #bottomPanel h1{
-    font-size: 44px;
+    font-size: 3vw;
     color: red;
 }
 
 #bottomPanel h2{
-    font-size: 40px;
-    color: rgb(10, 66, 122);
+    font-size: 3vw;
+    color: rgb(17, 114, 211);
 }
 
 #bottomPanel .bubble{
-    height: 60px;
-    width: 60px;
+    height: 4.2vw;
+    width: 4.2vw;
     border-radius: 50%;
     background-color: rgb(17, 114, 211);
     color: #fff;
-    font-size: 22px;
+    font-size: 1.7vw;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -95,4 +97,91 @@ html,body {
 
 #bottomPanel .bubble:hover{
     background-color: rgb(10, 66, 122);
+}
+
+#copyright{
+    position: absolute;
+    bottom: 1vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#copyright span a{
+    text-decoration: none;
+    color: rgb(0, 63, 127);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    
+#panel{
+    width: 90%;
+    height: 79%;
+}
+
+#topPanel{
+    height: 80px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.elem{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.elem h2{
+    font-size: 4.5vw;
+}
+
+.elem .box{
+    padding: 1.5vw 2vw;
+    border-radius: 1vw;
+    font-size: 4.5vw;
+}
+        
+#bottomPanel{
+    height: calc(100% - 80px);
+    padding: 3vw 2.5vw;
+    gap: 2.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomPanel h1{
+    font-size: 8vw;
+    color: red;
+}
+
+#bottomPanel h2{
+    font-size: 8vw;
+    color: rgb(17, 114, 211);
+}
+
+#bottomPanel .bubble{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    background-color: rgb(17, 114, 211);
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 5vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
 }

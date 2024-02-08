@@ -2,16 +2,26 @@ var timer = 60;
 var score = 0;
 var newTarget = 0;
 
-// event bubbling
+// event bubbling 
 // jispe click karoge wo element par event raise hoga aur event listener na milne par event element ke parent mai listener dhundega parent mai na mila toh parent ke parent mai listener ko dhundega 
 
 function makeBubble(){
     var clutter = "";
 
-    for(var i = 1; i <= 100; i++){
-        var randomNum = Math.floor(Math.random()*10)
-        clutter += `<div class="bubble">${randomNum}</div>`
-    }
+    if( (window.innerWidth || document.documentElement.clientWidth) > 600) {
+        //desktop screen
+            for(var i = 1; i <= 90; i++){
+                var randomNum = Math.floor(Math.random()*10)
+                clutter += `<div class="bubble">${randomNum}</div>`
+            }
+        }
+        else {
+        //mobile screen
+        for(var i = 1; i <= 35; i++){
+            var randomNum = Math.floor(Math.random()*10)
+            clutter += `<div class="bubble">${randomNum}</div>`
+        }
+        }
 
     document.querySelector("#bottomPanel").innerHTML = clutter;
 }
